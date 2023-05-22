@@ -15,10 +15,10 @@ char* all_upper(char *from,int size)
                 from[i] -= 32;
             }else if(((from[i] >= -128 && from[i] <= -113) && from[i - 1] == -47)){
                 from[i] += 32;
-                from[i - 1] -= 1;
+                from[i - 1]--;
             }else{
                 from[i] -= 16;
-                from[i - 1] -= 1;
+                from[i - 1]--;
             }
         }
     }
