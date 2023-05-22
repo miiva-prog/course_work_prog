@@ -53,7 +53,7 @@ int main(int argc,char *argv[])
             all_upper(word_rus_copy,strlen(word_rus_copy));
 
             if(strcmp(dict_rus_copy,word_rus_copy) == 0){
-                char word_eng[20]; 
+                char word_eng[SIZE_WORD]; 
                 int index_dict_eng = 0;
 
                 for(size_t n = 0;n < strlen(word_dict);n++){
